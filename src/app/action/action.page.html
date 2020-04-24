@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button><!--Back button-->
+    </ion-buttons>
+    <ion-title>GOT Episodes</ion-title>
+  </ion-toolbar>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title>Seasons</ion-title>
+    </ion-toolbar>
+  </ion-header>,
+  <ion-content fullscreen>
+    <ion-card *ngFor="let movie of MovieData"> <!--Allows you to write a loop-->
+      <img src="{{movie.Poster}}"><!--Shows the movie poster-->
+      <ion-card-header>
+      <ion-card-subtitle>{{movie.Title}}</ion-card-subtitle><!--Shows the title-->
+      <ion-card-title>{{movie.Year}}</ion-card-title><!--Shows the Year of the movie-->
+      </ion-card-header>
+      </ion-card>
+  </ion-content>
+ 

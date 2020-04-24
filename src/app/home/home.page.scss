@@ -1,3 +1,5 @@
+
+
 #container {
   text-align: center;
 
@@ -26,6 +28,7 @@
   text-decoration: none;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
-}
+ion-content {
+  --background: url('/assets/images/bg.jpg') no-repeat center center fixed;
+  background-image: src;
+}//background image for home page

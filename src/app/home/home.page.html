@@ -1,20 +1,26 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-title>Menu</ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<!--Buttons that will bring you to the routing pages and changes the url-->
+<ion-content [fullscreen]="true">
+ <ion-button [routerLink]="['/action']">Game Of Thrones</ion-button> 
+
+
+<br>
+
+
+  <ion-button [routerLink]="['/peaky']">Summary Of Characters</ion-button>
+
+
+ <br>
+
+  <ion-button [routerLink]="['/favourite']"> your favourite Character</ion-button>
+  <ion-title>Your Favourite: {{yourFavourite}}</ion-title>
+ 
+   <br>
+
+   <ion-button (click)="lightMethod()">Flashlight</ion-button>
+  </ion-content>

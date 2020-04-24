@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button></ion-back-button><!--Back button-->
+    </ion-buttons>
+    <ion-title>Pick Which Character You Like The Best</ion-title>
+  </ion-toolbar>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>,
+
+<ion-content>
+
+  <ion-list>
+  <ion-radio-group [(ngModel)]="yourFavourite"><!--What every you pick will me up loaded to yourFavourite-->
+  <ion-item>
+  <ion-label>Jon Snow</ion-label>
+  <ion-radio value="Jon Snow"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-radio value="Daenerys Targaryen"></ion-radio>
+  </ion-item>
+ 
+  <ion-item>
+  <ion-label>Arya Stark</ion-label>
+  <ion-radio value="Arya Stark" ></ion-radio>
+  </ion-item>
+  
+  <ion-item>
+  <ion-label>Bran Stark</ion-label>
+  <ion-radio value="Bran Stark" ></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-list>
+
+  <ion-button (click)="saveFavourite()">Save</ion-button><!--Invoke click event calls the saveFavourite-->
+  </ion-content>
+
